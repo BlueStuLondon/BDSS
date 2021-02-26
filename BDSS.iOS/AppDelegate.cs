@@ -4,12 +4,14 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using Octane.Xamarin.Forms.VideoPlayer.iOS;
 
 namespace BDSS.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
-    // application events from iOS.
+    // application events from iOS.;
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
@@ -24,6 +26,7 @@ namespace BDSS.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            FormsVideoPlayer.Init();
 
             return base.FinishedLaunching(app, options);
         }

@@ -8,26 +8,23 @@
       VerticalOptions="Fill">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="6*"/>
+            <RowDefinition Height="8*"/>
             <RowDefinition Height="10*"/>
-     
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>   
         </Grid.RowDefinitions>
         <Label Grid.Row="0" BackgroundColor = "#0086C8"
-            Text="British Diving Single Solution App v0.1" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
-        <Image Grid.Row="1" Source="BritishDivngOneTeamColour.png"/>
-        <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
+            Text="British Diving Single Solution app v0.1" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
+        <Image Grid.Row="1" Source="https://st2.depositphotos.com/2815589/45057/i/1600/depositphotos_450577540-stock-photo-natural-styled-stock-photo-feminine.jpg"/>
+        <!--<o:VideoPlayer Grid.Row="2" x:Name="vidVideoPlayer"
             AutoPlay="True"
             BackgroundColor="Black"
             Source="Intro.mp4"
+            HorizontalOptions="FillAndExpand" />-->
 
-            HorizontalOptions="FillAndExpand" />
+        <Image Grid.Row="2" Source="http://www.africau.edu/images/default/sample.pdf"/>
 
-            <Frame Grid.Row="2" Padding="10">
-            <ScrollView x:Name="scrViewer">
-                <Label x:Name="lblContent"/>
-            </ScrollView>
-        </Frame>
-        <Grid Grid.Row="3">
+        <!--<Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -36,11 +33,13 @@
             <Button Grid.Column="0" x:Name="btnFAQ" HorizontalOptions="FillAndExpand"
                 BackgroundColor ="#bc1f7b" 
                 Text="Journey" FontSize="Large" TextColor="#eeeeee"
-                Clicked="btnFAQ_Clicked" />
+                Clicked="btnFAQ_Clicked"
+
+                    />
 
             <Picker Grid.Column = "1"  
                 x:Name="Section"  
-                Title="Levels" HorizontalTextAlignment="Center"
+                Title="Levels" HorizontalOptions="Center"
                 TitleColor="White"
                 BackgroundColor ="#bc1f7b" 
                 FontSize="Large"
@@ -60,7 +59,7 @@
 
             <Picker Grid.Column = "2"  
                  x:Name="pckVidPick"  
-                 Title="Videos" HorizontalTextAlignment="Center"
+                 Title="Videos" HorizontalOptions="Center"
                  BackgroundColor ="#bc1f7b" 
                  TitleColor="White"
                  FontSize="Large"
@@ -88,8 +87,8 @@
 
             </Picker>
 
-        </Grid>
-        <Image Grid.Row="4" Source="BritishDivingOneTeamColour.png" VerticalOptions="Start"/>
+        </Grid>-->
+        <Image Grid.Row="4" Source="https://st2.depositphotos.com/2815589/45057/i/1600/depositphotos_450577540-stock-photo-natural-styled-stock-photo-feminine.jpg" VerticalOptions="Start"/>
     </Grid>
 
 </ContentPage>
