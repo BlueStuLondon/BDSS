@@ -15,7 +15,7 @@
 
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" BackgroundColor = "#0086C8"
+        <Label Grid.Row="0" BackgroundColor = "#0086C9"
             Text="British Diving Single System App v0.1" VerticalTextAlignment="Center" HorizontalTextAlignment ="Center" FontSize ="Large" FontFamily="Bold" TextColor="White" />
 
         <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
