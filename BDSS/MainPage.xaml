@@ -12,17 +12,18 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>   
+
         </Grid.RowDefinitions>
+
         <Label Grid.Row="0" BackgroundColor = "#0086C8"
-            Text="British Diving Single Solution app v0.1" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
-        <Image Grid.Row="1" Source="https://st2.depositphotos.com/2815589/45057/i/1600/depositphotos_450577540-stock-photo-natural-styled-stock-photo-feminine.jpg"/>
-        <!--<o:VideoPlayer Grid.Row="2" x:Name="vidVideoPlayer"
+            Text="British Diving Single System app v0.1" VerticalTextAlignment="Center" HorizontalTextAlignment ="Center" FontSize ="Large" FontFamily="Bold" TextColor="White" />
+
+        <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
             AutoPlay="True"
             BackgroundColor="Black"
-            Source="Intro.mp4"
-            HorizontalOptions="FillAndExpand" />-->
+            Source="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+            HorizontalOptions="FillAndExpand" />
 
-        <Image Grid.Row="2" Source="http://www.africau.edu/images/default/sample.pdf"/>
 
         <!--<Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
