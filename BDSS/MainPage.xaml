@@ -14,7 +14,7 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0" BackgroundColor = "#0086C8"
-            Text="British Diving Single Solution Feb 2021 v0.1" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
+            Text="British Diving Single Solution Feb 26th 2021 v0.1" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
         <Image Grid.Row="1" Source="BritishDivngOneTeamColour.png"/>
         <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
             AutoPlay="True"
