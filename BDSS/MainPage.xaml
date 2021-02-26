@@ -22,10 +22,7 @@
 
             HorizontalOptions="FillAndExpand" />
 
-
-
-
-        <Frame Grid.Row="2" Padding="10">
+            <Frame Grid.Row="2" Padding="10">
             <ScrollView x:Name="scrViewer">
                 <Label x:Name="lblContent"/>
             </ScrollView>
