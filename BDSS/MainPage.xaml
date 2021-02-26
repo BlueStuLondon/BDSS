@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+             x:Class="BDSS.MainPage">
+
+    <Grid HorizontalOptions="Fill" RowSpacing="0"
+      VerticalOptions="Fill">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" BackgroundColor = "#0086C8"
+            Text="British Diving WCP" HorizontalTextAlignment ="Center" VerticalTextAlignment="End"  FontSize ="Large" FontFamily="Bold" TextColor="White" />
+        <Image Grid.Row="1" Source="BritishDivngOneTeamColour.png"/>
+        <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
+            AutoPlay="True"
+            BackgroundColor="Black"
+            Source="Intro.mp4"
+
+            HorizontalOptions="FillAndExpand" />
+
+
+
+
+        <Frame Grid.Row="2" Padding="10">
+            <ScrollView x:Name="scrViewer">
+                <Label x:Name="lblContent"/>
+            </ScrollView>
+        </Frame>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="btnFAQ" HorizontalOptions="FillAndExpand"
+                BackgroundColor ="#bc1f7b" 
+                Text="Journey" FontSize="Large" TextColor="#eeeeee"
+                Clicked="btnFAQ_Clicked" />
+
+            <Picker Grid.Column = "1"  
+                x:Name="Section"  
+                Title="Levels" HorizontalTextAlignment="Center"
+                TitleColor="White"
+                BackgroundColor ="#bc1f7b" 
+                FontSize="Large"
+                SelectedIndexChanged="Section_SelectedIndexChanged_1">
+
+
+                <Picker.Items>
+                    <x:String>Podium and Future Medal Winners (FMW)</x:String>
+                    <x:String>Academy</x:String>
+                    <x:String>Confirmation</x:String>
+                    <x:String>Progression</x:String>
+                    <x:String>Identified Talent</x:String>
+                </Picker.Items>
+
+            </Picker>
+
+
+            <Picker Grid.Column = "2"  
+                 x:Name="pckVidPick"  
+                 Title="Videos" HorizontalTextAlignment="Center"
+                 BackgroundColor ="#bc1f7b" 
+                 TitleColor="White"
+                 FontSize="Large"
+                 SelectedIndexChanged="pckVidPick_SelectedIndexChanged">
+
+                <Picker.Items>
+                    <x:String>Diver Insights</x:String>
+                    <x:String>Diver Insights 2</x:String>
+                    <x:String>Diver Insights 3</x:String>
+                    <x:String>Diver Insights 4</x:String>
+                    <x:String>Coaches Insights</x:String>
+                    <x:String>Coaches Insights 2</x:String>
+
+                    <x:String>Athlete Health</x:String>
+                    <x:String>Nutrition</x:String>
+                    <x:String>Psychology</x:String>
+                    <x:String>Lifestyle</x:String>
+                    <x:String>Home Nations</x:String>
+                    <x:String>Performance Manager</x:String>
+                    <x:String>Talent and Development Manager</x:String>
+                    <x:String>Head of SSSM</x:String>
+
+
+                </Picker.Items>
+
+            </Picker>
+
+        </Grid>
+        <Image Grid.Row="4" Source="BritishDivingOneTeamColour.png" VerticalOptions="Start"/>
+    </Grid>
+
+</ContentPage>
