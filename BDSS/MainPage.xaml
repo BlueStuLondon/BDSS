@@ -58,7 +58,7 @@
             </Picker>
 
 
-            <Picker Grid.Column = "2"  
+            <Picker Grid.Column = "2" 
                  x:Name="pckVidPick"  
                  Title="Videos" HorizontalOptions="Center"
                  BackgroundColor ="#bc1f7b" 
