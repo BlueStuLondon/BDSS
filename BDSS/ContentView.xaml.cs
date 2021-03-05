@@ -7,10 +7,10 @@ namespace BDSS
 {
     public partial class ContentView : ContentPage
     {
-        public ContentView()
+        public ContentView(string filename)
         {
             InitializeComponent();
-            wbvContent.Source = "file:///Users/stuartmenges/Documents/GitHub/BDSS/BDSS.iOS/Resources/FAIR.pdf";
+            wbvContent.Source = filename;
         }
 
         async void btnBack_Clicked(System.Object sender, System.EventArgs e)

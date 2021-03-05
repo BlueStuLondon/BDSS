@@ -45,9 +45,7 @@ namespace BDSS
             string[] words = testme.Split('.');
             returnIndex = Convert.ToInt16(words[0]);
             
-            MainPage.ChapIndex = returnIndex;
-            await DisplayAlert("Alert", Convert.ToString(MainPage.ChapIndex), "OK");
-            // Once we've identified the chapter that's been selected, we want to close the window (actually, 'pop' the view)
+            
             await Navigation.PopModalAsync();
 
         }
