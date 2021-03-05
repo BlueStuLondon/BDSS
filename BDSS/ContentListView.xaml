@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BDSS.ContentListView">
+    <ContentPage.Content>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0" x:Name="lstChapterList" ItemSelected="lstChapterList_ItemSelected"/>
+                     
+            <Button Grid.Row="1"
+            x:Name="btnBack"
+       
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor ="#bc1f7b" 
+                    Text="Back" FontSize="Title" TextColor="#eeffee"
+
+            Clicked="btnBack_Clicked"/>
+            </Grid>
+    </ContentPage.Content>
+ 
+</ContentPage>
+
+

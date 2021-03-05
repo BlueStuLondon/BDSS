@@ -13,6 +13,9 @@ namespace BDSS.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.;
     [Register("AppDelegate")]
+
+    
+
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
         //
@@ -28,7 +31,11 @@ namespace BDSS.iOS
             LoadApplication(new App());
             FormsVideoPlayer.Init();
 
+            
+
             return base.FinishedLaunching(app, options);
         }
+
+        
     }
 }

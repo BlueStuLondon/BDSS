@@ -139,4 +139,8 @@
       <Name>BDSS</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FAIR.pdf" />
+    <BundleResource Include="Resources\BDLogo.png" />
+  </ItemGroup>
 </Project>

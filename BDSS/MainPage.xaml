@@ -11,12 +11,12 @@
             <RowDefinition Height="8*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>   
+            <RowDefinition Height="3*"/>  
 
         </Grid.RowDefinitions>
-        <!--This is the branch-->
-        <Label Grid.Row="0" BackgroundColor = "#0086C9"
-            Text="British Diving Single System App v0.1" VerticalTextAlignment="Center" HorizontalTextAlignment ="Center" FontSize ="Large" FontFamily="Bold" TextColor="White" />
+   
+        <Label Grid.Row="0" BackgroundColor="#0086C9"
+            Text="British Diving Single System v0.1" VerticalTextAlignment="Center" HorizontalTextAlignment ="Center" FontSize ="Large" FontFamily="Bold" TextColor="White" />
 
         <o:VideoPlayer Grid.Row="1" x:Name="vidVideoPlayer"
             AutoPlay="True"
@@ -24,72 +24,34 @@
             Source="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
             HorizontalOptions="FillAndExpand" />
 
+         <WebView Grid.Row = "2" x:Name="webview"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200"> </WebView>
 
-        <!--<Grid Grid.Row="3">
+
+        <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+              
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" x:Name="btnFAQ" HorizontalOptions="FillAndExpand"
-                BackgroundColor ="#bc1f7b" 
-                Text="Journey" FontSize="Large" TextColor="#eeeeee"
-                Clicked="btnFAQ_Clicked"
-
+            <Button Grid.Column="0"
+                    x:Name="btnChapters"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor ="#bc1f7b" 
+                    Text="Chapters" FontSize="Title" TextColor="#eeffee"
+                    Clicked="btnChapters_Clicked"
+                    />
+            <Button Grid.Column="1"
+                    x:Name="btncontent"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor ="#bc1f7b" 
+                    Text="Content" FontSize="Title" TextColor="#eeffee"
+                    Clicked="btncontent_Clicked"
                     />
 
-            <Picker Grid.Column = "1"  
-                x:Name="Section"  
-                Title="Levels" HorizontalOptions="Center"
-                TitleColor="White"
-                BackgroundColor ="#bc1f7b" 
-                FontSize="Large"
-                SelectedIndexChanged="Section_SelectedIndexChanged_1">
-
-
-                <Picker.Items>
-                    <x:String>Podium and Future Medal Winners (FMW)</x:String>
-                    <x:String>Academy</x:String>
-                    <x:String>Confirmation</x:String>
-                    <x:String>Progression</x:String>
-                    <x:String>Identified Talent</x:String>
-                </Picker.Items>
-
-            </Picker>
-
-
-            <Picker Grid.Column = "2" 
-                 x:Name="pckVidPick"  
-                 Title="Videos" HorizontalOptions="Center"
-                 BackgroundColor ="#bc1f7b" 
-                 TitleColor="White"
-                 FontSize="Large"
-                 SelectedIndexChanged="pckVidPick_SelectedIndexChanged">
-
-                <Picker.Items>
-                    <x:String>Diver Insights</x:String>
-                    <x:String>Diver Insights 2</x:String>
-                    <x:String>Diver Insights 3</x:String>
-                    <x:String>Diver Insights 4</x:String>
-                    <x:String>Coaches Insights</x:String>
-                    <x:String>Coaches Insights 2</x:String>
-
-                    <x:String>Athlete Health</x:String>
-                    <x:String>Nutrition</x:String>
-                    <x:String>Psychology</x:String>
-                    <x:String>Lifestyle</x:String>
-                    <x:String>Home Nations</x:String>
-                    <x:String>Performance Manager</x:String>
-                    <x:String>Talent and Development Manager</x:String>
-                    <x:String>Head of SSSM</x:String>
-
-
-                </Picker.Items>
-
-            </Picker>
-
-        </Grid>-->
-        <Image Grid.Row="4" Source="https://st2.depositphotos.com/2815589/45057/i/1600/depositphotos_450577540-stock-photo-natural-styled-stock-photo-feminine.jpg" VerticalOptions="Start"/>
+        </Grid>
+        
+        <!--<WebView Grid.Row="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Source="https://homepages.cae.wisc.edu/~ece533/images/airplane.png"/>-->
+        <Image Grid.Row = "4" Source = "BDLogo.png" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
     </Grid>
 
 </ContentPage>
