@@ -33,24 +33,24 @@
                 <ColumnDefinition Width="1*"/>
               
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0"
-                    x:Name="btnChapters"
-                    HorizontalOptions="FillAndExpand"
+            <Picker Grid.Column="0"
+                    x:Name="pckChapters"
+                    HorizontalOptions="Center"
                     BackgroundColor ="#bc1f7b" 
-                    Text="Chapters" FontSize="Title" TextColor="#eeffee"
-                    Clicked="btnChapters_Clicked"
+                    Title="Chapters" FontSize="Title" TextColor="#eeffee"
+                    SelectedIndexChanged="pckChapters_SelectedIndexChanged"
                     />
-            <Button Grid.Column="1"
-                    x:Name="btncontent"
-                    HorizontalOptions="FillAndExpand"
+            <Picker Grid.Column="1"
+                    x:Name="pckContent"
+                    HorizontalOptions="Center"
                     BackgroundColor ="#bc1f7b" 
-                    Text="Content" FontSize="Title" TextColor="#eeffee"
-                    Clicked="btncontent_Clicked"
+                    Title="Content" FontSize="Title" TextColor="#eeffee"
+                    SelectedIndexChanged="pckContent_SelectedIndexChanged"
                     />
 
         </Grid>
         
-        <!--<WebView Grid.Row="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Source="https://homepages.cae.wisc.edu/~ece533/images/airplane.png"/>-->
+        
         <Image Grid.Row = "4" Source = "BDLogo.png" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
     </Grid>
 

@@ -11,12 +11,17 @@ namespace BDSS
 {
     public partial class MainPage : ContentPage
     {
+
+        clsLists cLists = new clsLists();
+        int ChapterIndex = 999;
+
         public static int ChapIndex { get; set; }
         public MainPage()
         {
             InitializeComponent();
             webview.Source = "https://uwaterloo.ca/onbase/sites/ca.onbase/files/uploads/files/samplecertifiedpdf.pdf";
-            ChapIndex = 999;
+            pckChapters.ItemsSource = cLists.chapters;
+            
 
         }
 
@@ -39,6 +44,14 @@ namespace BDSS
         {
             await Navigation.PushModalAsync(new ContentView());
             
+        }
+
+        void pckChapters_SelectedIndexChanged(System.Object sender, System.EventArgs e)
+        {
+        }
+
+        void pckContent_SelectedIndexChanged(System.Object sender, System.EventArgs e)
+        {
         }
     }
 
