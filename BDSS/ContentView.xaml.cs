@@ -10,11 +10,20 @@ namespace BDSS
         public ContentView(string filename)
         {
             InitializeComponent();
-            wbvContent.Source = filename;
+            try
+            {
+                wbvContent.Source = filename;
+            }
+            catch (Exception ex)
+            {
+                Navigation.PopModalAsync();
+            }
+            
         }
 
         async void btnBack_Clicked(System.Object sender, System.EventArgs e)
         {
+            
             await Navigation.PopModalAsync();
         }
     }
