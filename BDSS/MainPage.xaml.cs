@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 
+
 namespace BDSS
 {
     public partial class MainPage : ContentPage
@@ -21,7 +22,12 @@ namespace BDSS
         public MainPage()
         {
             InitializeComponent();
-            //webview.Source = "https://uwaterloo.ca/onbase/sites/ca.onbase/files/uploads/files/samplecertifiedpdf.pdf";
+            pckChapters.Title = "Chapters";
+            pckChapters.TitleColor = Color.White;
+            pckChapters.TextColor = Color.White;
+            pckContent.Title = "Contents";
+            pckContent.TitleColor = Color.White;
+            pckContent.TextColor = Color.White;
             pckChapters.ItemsSource = cLists.chapters;
 
         }
